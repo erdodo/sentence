@@ -1,0 +1,42 @@
+import BaseComponent, { EventDispatcher } from 'fstp-ui/src/components/base.component';
+import { PropertyValues, TemplateResult } from 'lit';
+import { MoleculeModalPositionEnum, MoleculeModalSizeEnum, MoleculeModalStatusEnum, MoleculeModalTypeEnum } from 'fstp-ui/src/models/molecules';
+import 'fstp-ui/src/components/atoms';
+import { LitElement } from 'lit-element';
+import { AtomIconsEnum, AtomIconsTypeEnum } from 'fstp-ui/src/models/atoms';
+export declare class MoleculeModalComponent extends BaseComponent {
+    fPosition: MoleculeModalPositionEnum;
+    fIsOpen: boolean;
+    fTitle: string;
+    fIsCloseOnOutsideClick: boolean;
+    fType: MoleculeModalTypeEnum;
+    fSize: MoleculeModalSizeEnum;
+    fContentClass: string;
+    fHasHeader?: boolean;
+    fHasTitle?: boolean;
+    fHasDescription?: boolean;
+    fHasFooter?: boolean;
+    fHasIcon?: boolean;
+    fHasCloseButton?: boolean;
+    fDescription?: string;
+    fIcon?: AtomIconsEnum;
+    fIconType?: AtomIconsTypeEnum;
+    fStatus?: MoleculeModalStatusEnum;
+    opened: boolean;
+    fOpened?: EventDispatcher<LitElement>;
+    fClosed?: EventDispatcher<LitElement>;
+    modalContent: HTMLElement;
+    modalArea: HTMLElement;
+    modal: HTMLElement;
+    protected updated(_changedProperties: PropertyValues): void;
+    protected render(): TemplateResult;
+    private getTitleSize;
+    show(): void;
+    hide(): void;
+}
+export declare const Modal: import("@lit/react").ReactWebComponent<MoleculeModalComponent, {
+    fOpened: string;
+    fClosed: string;
+}>;
+export declare function openModal(id: string): void;
+export declare function closeModal(id: string): void;

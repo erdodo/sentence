@@ -1,0 +1,33 @@
+@import "fstp-ui/src/styles/styles.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-core: #860A35;
+  --primary-emphasis: #4d1829;
+  --primary-clear: rgba(134, 10, 53, 0.24);
+  --secondary-core: #2D9596;
+  --secondary-emphasis: #276262;
+  --secondary-clear: rgba(45, 149, 150, 0.24);
+  --info-core: #17a2b8;
+  --info-emphasis: #68b4c4;
+  --info-clear: #e6f7f9;
+  --success-core: #28a745;
+  --success-emphasis: #8fd18f;
+  --success-clear: #e9f2e6;
+  --danger-core: #9b2a36;
+  --danger-emphasis: #eb9fa3;
+  --danger-clear: #f9eaea;
+  --warning-core: #ffc107;
+  --warning-emphasis: #ffd86b;
+  --warning-clear: #fff9e5;
+  --neutral-100: #fdfdfd;
+  --neutral-200: #f9f9f9;
+  --neutral-300: #f1f2f4;
+  --neutral-400: #cccccc;
+  --neutral-500: #999999;
+  --neutral-600: #5c5c5c;
+  --neutral-700: #333333;
+  --neutral-800: #252525;
+  --neutral-900: #1f1f1f}
